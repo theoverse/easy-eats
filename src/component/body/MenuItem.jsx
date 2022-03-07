@@ -8,7 +8,7 @@ const MenuItem = props => {
             <Card style={{ width: '25rem' }}>
                 <Card.Img variant="top" src={props.dish.image} />
                 <Card.Body>
-                    <Card.Title style={{ cursor: "pointer" }}>{props.dish.name}</Card.Title>
+                    <Card.Title style={{ cursor: "pointer" }} onClick={() => props.dishSelect(props.dish)}>{props.dish.name}</Card.Title>
                     <Card.Text>
                         {props.dish.description}
                     </Card.Text>
