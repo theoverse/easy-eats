@@ -2,13 +2,11 @@ import React from 'react'
 import { Card } from 'react-bootstrap'
 
 const MenuItem = props => {
-    // console.log(props)
     return (
         <div>
             <Card style={{ width: '25rem' }}>
                 <Card.Img variant="top" src={props.dish.image} />
                 <Card.Body>
-                    {/* can pass function from Menu */}
                     <Card.Title style={{ cursor: "pointer" }} onClick={props.dishSelect}>{props.dish.name}</Card.Title>
                     <Card.Text>
                         {props.dish.description}
