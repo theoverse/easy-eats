@@ -19,7 +19,7 @@ export class Menu extends Component {
 
         const menu = this.state.dishes.map(item => {
             return (
-                <MenuItem dish={item} key={item.id} dishSelect={this.onDishSelect} />
+                <MenuItem dish={item} key={item.id} dishSelect={() => this.onDishSelect(item)} />
             )
         })
 
