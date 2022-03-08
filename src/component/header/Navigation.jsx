@@ -9,7 +9,7 @@ const Navigation = () => {
         <div>
             <Navbar bg="dark" expand="lg">
                 <Container>
-                    <Navbar.Brand><Link to="/"><img src={Logo} height="64px" width="192px" /></Link></Navbar.Brand>
+                    <Navbar.Brand><Link to="/"><img src={Logo} alt="logo" height="64px" width="192px" /></Link></Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
